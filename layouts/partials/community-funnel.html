@@ -1,0 +1,23 @@
+<!-- Community Funnel Banner -->
+<div class="community-funnel-banner">
+    <div class="community-funnel-content">
+        <div class="funnel-text">
+            {{ if eq .Language.Lang "es" }}
+            🌟 Únete a miles de estudiantes y practicantes en nuestra comunidad global
+            {{ else if eq .Language.Lang "de" }}
+            🌟 Treten Sie Tausenden von Studenten und Praktizierenden in unserer globalen Gemeinschaft bei
+            {{ else }}
+            🌟 Join thousands of students and practitioners in our global community
+            {{ end }}
+        </div>
+        <a href="{{ .Site.Params.funnels.community }}" class="funnel-cta-button" target="_blank" rel="noopener">
+            {{ if eq .Language.Lang "es" }}
+            Explorar Wayist.Life
+            {{ else if eq .Language.Lang "de" }}
+            Wayist.Life erkunden
+            {{ else }}
+            Explore Wayist.Life
+            {{ end }}
+        </a>
+    </div>
+</div>

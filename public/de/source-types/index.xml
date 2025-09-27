@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Source Types on Die Geschichte des Wayismus: 5,000 Jahre des Weges</title>
+    <link>http://localhost:1313/history/de/source-types/</link>
+    <description>Recent content in Source Types on Die Geschichte des Wayismus: 5,000 Jahre des Weges</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <atom:link href="http://localhost:1313/history/de/source-types/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

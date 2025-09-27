@@ -1,0 +1,123 @@
+<nav id="main-navigation" class="main-navigation" role="navigation" aria-label="Main Navigation">
+    <div class="navigation-container">
+        <!-- Primary Navigation Menu -->
+        <ul class="nav-menu" role="menubar">
+            <!-- Timeline Menu Item -->
+            <li class="nav-item has-dropdown" role="none">
+                <a href="{{ "/periods/" | relLangURL }}" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                    <span class="nav-text">
+                        {{ if eq .Language.Lang "es" }}Cronología{{ else if eq .Language.Lang "de" }}Zeitleiste{{ else }}Timeline{{ end }}
+                    </span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    {{ range .Site.Params.nav.timeline }}
+                    <li class="dropdown-item" role="none">
+                        <a href="{{ .url | relLangURL }}" class="dropdown-link" role="menuitem">
+                            <span class="period-name">{{ .name }}</span>
+                            <span class="period-dates">{{ .period }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </li>
+            
+            <!-- Regions Menu Item -->
+            <li class="nav-item has-dropdown" role="none">
+                <a href="{{ "/regions/" | relLangURL }}" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                    <span class="nav-text">
+                        {{ if eq .Language.Lang "es" }}Regiones{{ else if eq .Language.Lang "de" }}Regionen{{ else }}Regions{{ end }}
+                    </span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    {{ range .Site.Params.nav.regions }}
+                    <li class="dropdown-item" role="none">
+                        <a href="{{ .url | relLangURL }}" class="dropdown-link" role="menuitem">{{ .name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </li>
+            
+            <!-- Figures Menu Item -->
+            <li class="nav-item" role="none">
+                <a href="{{ "/figures/" | relLangURL }}" class="nav-link" role="menuitem">
+                    {{ if eq .Language.Lang "es" }}Figuras{{ else if eq .Language.Lang "de" }}Figuren{{ else }}Figures{{ end }}
+                </a>
+            </li>
+            
+            <!-- Sources Menu Item -->
+            <li class="nav-item" role="none">
+                <a href="{{ "/sources/" | relLangURL }}" class="nav-link" role="menuitem">
+                    {{ if eq .Language.Lang "es" }}Fuentes{{ else if eq .Language.Lang "de" }}Quellen{{ else }}Sources{{ end }}
+                </a>
+            </li>
+            
+            <!-- Teachers Menu Item -->
+            <li class="nav-item" role="none">
+                <a href="{{ "/teachers/" | relLangURL }}" class="nav-link" role="menuitem">
+                    {{ if eq .Language.Lang "es" }}Maestros{{ else if eq .Language.Lang "de" }}Lehrer{{ else }}Teachers{{ end }}
+                </a>
+            </li>
+            
+            <!-- About Menu Item -->
+            <li class="nav-item" role="none">
+                <a href="{{ "/about/" | relLangURL }}" class="nav-link" role="menuitem">
+                    {{ if eq .Language.Lang "es" }}Acerca{{ else if eq .Language.Lang "de" }}Über{{ else }}About{{ end }}
+                </a>
+            </li>
+        </ul>
+        
+        <!-- Desktop Search -->
+        <div class="search-container desktop-search">
+            {{ if .Site.Params.search.enabled }}
+            <form class="search-form" role="search" aria-label="Search the archive">
+                <div class="search-input-group">
+                    <label for="desktop-search-input" class="visually-hidden">
+                        {{ if eq .Language.Lang "es" }}
+                        {{ .Site.Params.search.placeholder_es }}
+                        {{ else if eq .Language.Lang "de" }}
+                        {{ .Site.Params.search.placeholder_de }}
+                        {{ else }}
+                        {{ .Site.Params.search.placeholder_en }}
+                        {{ end }}
+                    </label>
+                    <input 
+                        type="search" 
+                        id="desktop-search-input" 
+                        class="search-input"
+                        placeholder="{{ if eq .Language.Lang "es" }}{{ .Site.Params.search.placeholder_es }}{{ else if eq .Language.Lang "de" }}{{ .Site.Params.search.placeholder_de }}{{ else }}{{ .Site.Params.search.placeholder_en }}{{ end }}"
+                        autocomplete="off"
+                        aria-describedby="search-instructions">
+                    <button type="submit" class="search-submit-btn" aria-label="Search">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="search-instructions" class="visually-hidden">
+                    {{ if eq .Language.Lang "es" }}
+                    Presiona Enter para buscar o usa las flechas para navegar por las sugerencias
+                    {{ else if eq .Language.Lang "de" }}
+                    Drücken Sie Enter zum Suchen oder verwenden Sie die Pfeiltasten für Vorschläge
+                    {{ else }}
+                    Press Enter to search or use arrow keys to navigate suggestions
+                    {{ end }}
+                </div>
+            </form>
+            {{ end }}
+        </div>
+    </div>
+</nav>
+
+<!-- Breadcrumb Navigation -->
+{{ if not .IsHome }}
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    {{ partial "breadcrumbs.html" . }}
+</nav>
+{{ end }}

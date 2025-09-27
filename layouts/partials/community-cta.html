@@ -1,0 +1,142 @@
+<!-- Community Call-to-Action Section -->
+<section class="community-cta-section">
+    <div class="community-cta-container">
+        <div class="community-cta-content">
+            <div class="cta-header">
+                <h2 class="cta-title">
+                    {{ if eq .Language.Lang "es" }}
+                    Profundiza Tu Comprensión
+                    {{ else if eq .Language.Lang "de" }}
+                    Vertiefen Sie Ihr Verständnis
+                    {{ else }}
+                    Deepen Your Understanding
+                    {{ end }}
+                </h2>
+                <p class="cta-subtitle">
+                    {{ if eq .Language.Lang "es" }}
+                    Únete a miles de estudiantes y practicantes explorando las raíces históricas del Wayismo
+                    {{ else if eq .Language.Lang "de" }}
+                    Treten Sie Tausenden von Studenten und Praktizierenden bei, die die historischen Wurzeln des Wayismus erforschen
+                    {{ else }}
+                    Join thousands of students and practitioners exploring the historical roots of Wayism
+                    {{ end }}
+                </p>
+            </div>
+            
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <div class="feature-icon">📚</div>
+                    <h3>
+                        {{ if eq .Language.Lang "es" }}
+                        Cursos Estructurados
+                        {{ else if eq .Language.Lang "de" }}
+                        Strukturierte Kurse
+                        {{ else }}
+                        Structured Courses
+                        {{ end }}
+                    </h3>
+                    <p>
+                        {{ if eq .Language.Lang "es" }}
+                        Aprende con material de curso diseñado por eruditos wayistas
+                        {{ else if eq .Language.Lang "de" }}
+                        Lernen Sie mit von wayistischen Gelehrten entwickeltem Kursmaterial
+                        {{ else }}
+                        Learn with course material designed by Wayist scholars
+                        {{ end }}
+                    </p>
+                </div>
+                
+                <div class="cta-feature">
+                    <div class="feature-icon">👥</div>
+                    <h3>
+                        {{ if eq .Language.Lang "es" }}
+                        Comunidad Global
+                        {{ else if eq .Language.Lang "de" }}
+                        Globale Gemeinschaft
+                        {{ else }}
+                        Global Community
+                        {{ end }}
+                    </h3>
+                    <p>
+                        {{ if eq .Language.Lang "es" }}
+                        Conecta con practicantes de todo el mundo
+                        {{ else if eq .Language.Lang "de" }}
+                        Verbinden Sie sich mit Praktizierenden aus der ganzen Welt
+                        {{ else }}
+                        Connect with practitioners from around the world
+                        {{ end }}
+                    </p>
+                </div>
+                
+                <div class="cta-feature">
+                    <div class="feature-icon">🎓</div>
+                    <h3>
+                        {{ if eq .Language.Lang "es" }}
+                        Certificación de Maestros
+                        {{ else if eq .Language.Lang "de" }}
+                        Lehrerzertifizierung
+                        {{ else }}
+                        Teacher Certification
+                        {{ end }}
+                    </h3>
+                    <p>
+                        {{ if eq .Language.Lang "es" }}
+                        Conviértete en un maestro wayista certificado
+                        {{ else if eq .Language.Lang "de" }}
+                        Werden Sie ein zertifizierter wayistischer Lehrer
+                        {{ else }}
+                        Become a certified Wayist teacher
+                        {{ end }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="cta-actions">
+                <a href="{{ .Site.Params.funnels.community }}" class="cta-primary-button" target="_blank" rel="noopener">
+                    {{ if eq .Language.Lang "es" }}
+                    Únete a Wayist.Life
+                    {{ else if eq .Language.Lang "de" }}
+                    Wayist.Life beitreten
+                    {{ else }}
+                    Join Wayist.Life
+                    {{ end }}
+                    <svg class="button-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7,7 17,7 17,17"></polyline>
+                    </svg>
+                </a>
+                
+                <a href="{{ .Site.Params.funnels.books }}" class="cta-secondary-button" target="_blank" rel="noopener">
+                    {{ if eq .Language.Lang "es" }}
+                    Explorar Libros
+                    {{ else if eq .Language.Lang "de" }}
+                    Bücher erkunden
+                    {{ else }}
+                    Explore Books
+                    {{ end }}
+                </a>
+            </div>
+        </div>
+        
+        <div class="cta-testimonial">
+            <blockquote>
+                {{ if eq .Language.Lang "es" }}
+                "Este archivo histórico ha transformado mi comprensión de las tradiciones espirituales antiguas y su relevancia para la vida moderna."
+                {{ else if eq .Language.Lang "de" }}
+                "Dieses historische Archiv hat mein Verständnis alter spiritueller Traditionen und ihrer Relevanz für das moderne Leben transformiert."
+                {{ else }}
+                "This historical archive has transformed my understanding of ancient spiritual traditions and their relevance to modern life."
+                {{ end }}
+            </blockquote>
+            <cite>
+                {{ if eq .Language.Lang "es" }}
+                — Miembro de la Comunidad Wayista
+                {{ else if eq .Language.Lang "de" }}
+                — Mitglied der wayistischen Gemeinschaft
+                {{ else }}
+                — Wayist Community Member
+                {{ end }}
+            </cite>
+        </div>
+    </div>
+</section>

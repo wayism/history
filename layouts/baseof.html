@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir="ltr">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="wayism-historical">
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Site Header -->
+    <header id="site-header" class="site-header">
+        {{ partial "header.html" . }}
+        {{ partial "navigation.html" . }}
+    </header>
+    
+    <!-- Community Funnel Banner -->
+    {{ partial "community-funnel.html" . }}
+    
+    <!-- Main Content Area -->
+    <main id="main-content" class="main-content" role="main">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    <!-- Site Footer -->
+    <footer id="site-footer" class="site-footer">
+        {{ partial "footer.html" . }}
+    </footer>
+    
+    <!-- Search Modal -->
+    {{/* {{ partial "search.html" . }} */}}
+    
+    <!-- Structured Data -->
+    {{/* {{ partial "json-ld.html" . }} */}}
+    
+    <!-- Scripts (minimal) -->
+    <script src="/js/navigation.js" defer></script>
+    {{ if .Site.Params.search.enabled }}
+    <script src="/js/search.js" defer></script>
+    {{ end }}
+    
+    <!-- Analytics -->
+    {{ if .Site.Params.analytics.google_analytics_id }}
+    <script src="/js/analytics.js" defer></script>
+    {{ end }}
+</body>
+</html>

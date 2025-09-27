@@ -1,0 +1,73 @@
+<div class="header-container">
+    <!-- Site Logo and Title -->
+    <div class="site-brand">
+        <a href="{{ "/" | relLangURL }}" class="site-logo-link" aria-label="Home">
+            <img src="/images/logo/wayism-logo.svg" alt="Wayism Historical Archive" class="site-logo" width="60" height="60">
+        </a>
+        <div class="site-title-block">
+            <h1 class="site-title">
+                <a href="{{ "/" | relLangURL }}" class="site-title-link">
+                    {{ .Site.Title }}
+                </a>
+            </h1>
+            <p class="site-tagline">{{ .Site.Params.footer.tagline }}</p>
+        </div>
+    </div>
+    
+    <!-- Language Switcher -->
+    {{ if .IsTranslated }}
+    <div class="language-switcher">
+        <label for="language-select" class="visually-hidden">Choose Language</label>
+        <select id="language-select" class="language-select" onchange="window.location.href=this.value">
+            {{ range .AllTranslations }}
+            <option value="{{ .Permalink }}" {{ if eq .Language.Lang $.Language.Lang }}selected{{ end }}>
+                {{ .Language.LanguageName }}
+            </option>
+            {{ end }}
+        </select>
+    </div>
+    {{ end }}
+    
+    <!-- Search Toggle (Mobile) -->
+    <div class="search-toggle-mobile">
+        <button type="button" class="search-toggle-btn" aria-label="Open Search" aria-expanded="false" aria-controls="search-modal">
+            <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+            <span class="search-text">Search</span>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle">
+        <button type="button" class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+</div>
+
+<!-- Community Banner (prominent placement) -->
+<div class="community-banner">
+    <div class="community-banner-content">
+        <span class="community-banner-text">
+            {{ if eq .Language.Lang "es" }}
+            Únete a la comunidad global wayista en
+            {{ else if eq .Language.Lang "de" }}
+            Tritt der globalen wayistischen Gemeinschaft bei
+            {{ else }}
+            Join the Global Wayist Community at
+            {{ end }}
+        </span>
+        <a href="{{ .Site.Params.funnels.community }}" class="community-banner-link" target="_blank" rel="noopener">
+            Wayist.Life
+            <svg class="external-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15,3 21,3 21,9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+    </div>
+</div>

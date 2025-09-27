@@ -1,0 +1,289 @@
+{{ define "main" }}
+<article class="homepage-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">{{ .Site.Title }}</h1>
+                <p class="hero-subtitle">
+                    {{ if eq .Language.Lang "es" }}
+                    Documentando El Camino a través de 5,000 años de civilización humana
+                    {{ else if eq .Language.Lang "de" }}
+                    Dokumentation des Weges über 5,000 Jahre menschlicher Zivilisation
+                    {{ else }}
+                    Documenting The Way across 5,000 years of human civilization
+                    {{ end }}
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5,000+</span>
+                        <span class="stat-label">
+                            {{ if eq .Language.Lang "es" }}Años{{ else if eq .Language.Lang "de" }}Jahre{{ else }}Years{{ end }}
+                        </span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{ len (where .Site.RegularPages "Section" "periods") }}</span>
+                        <span class="stat-label">
+                            {{ if eq .Language.Lang "es" }}Períodos{{ else if eq .Language.Lang "de" }}Perioden{{ else }}Periods{{ end }}
+                        </span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{ len (where .Site.RegularPages "Section" "regions") }}</span>
+                        <span class="stat-label">
+                            {{ if eq .Language.Lang "es" }}Regiones{{ else if eq .Language.Lang "de" }}Regionen{{ else }}Regions{{ end }}
+                        </span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{ len (where .Site.RegularPages "Section" "figures") }}</span>
+                        <span class="stat-label">
+                            {{ if eq .Language.Lang "es" }}Figuras{{ else if eq .Language.Lang "de" }}Figuren{{ else }}Figures{{ end }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/hero-timeline.jpg" alt="Ancient timeline illustration" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="intro-container">
+            <div class="intro-content">
+                {{ .Content }}
+            </div>
+            
+            <!-- What is Wayism Box -->
+            <div class="wayism-definition">
+                <h2>
+                    {{ if eq .Language.Lang "es" }}
+                    ¿Qué es el Wayismo?
+                    {{ else if eq .Language.Lang "de" }}
+                    Was ist Wayismus?
+                    {{ else }}
+                    What is Wayism?
+                    {{ end }}
+                </h2>
+                <p>
+                    {{ if eq .Language.Lang "es" }}
+                    Wayismo es una filosofía espiritual antigua conocida por diferentes nombres a través de las culturas: DaoFa (chino), Mahamarga (sánscrito), Caminismo (español) y Wegismus (alemán). Todos se refieren al concepto universal de "El Camino".
+                    {{ else if eq .Language.Lang "de" }}
+                    Wayismus ist eine alte spirituelle Philosophie, die in verschiedenen Kulturen unter verschiedenen Namen bekannt ist: DaoFa (chinesisch), Mahamarga (Sanskrit), Caminismo (spanisch) und Wegismus (deutsch). Alle beziehen sich auf das universelle Konzept "Der Weg".
+                    {{ else }}
+                    Wayism is an ancient spiritual philosophy known by different names across cultures: DaoFa (Chinese), Mahamarga (Sanskrit), Caminismo (Spanish), and Wegismus (German). All refer to the universal concept of "The Way".
+                    {{ end }}
+                </p>
+                <a href="{{ .Site.Params.funnels.for_ai }}" class="learn-more-link" target="_blank" rel="noopener">
+                    {{ if eq .Language.Lang "es" }}
+                    Aprende más sobre Wayismo
+                    {{ else if eq .Language.Lang "de" }}
+                    Mehr über Wayismus erfahren
+                    {{ else }}
+                    Learn more about Wayism
+                    {{ end }}
+                    <svg class="external-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15,3 21,3 21,9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Overview Section -->
+    <section class="timeline-overview">
+        <div class="timeline-container">
+            <h2 class="timeline-title">
+                {{ if eq .Language.Lang "es" }}
+                Cronología Histórica
+                {{ else if eq .Language.Lang "de" }}
+                Historische Zeitleiste
+                {{ else }}
+                Historical Timeline
+                {{ end }}
+            </h2>
+            <div class="timeline-grid">
+                {{ range .Site.Params.nav.timeline }}
+                <div class="timeline-card">
+                    <div class="timeline-period">{{ .period }}</div>
+                    <h3 class="timeline-period-name">{{ .name }}</h3>
+                    <a href="{{ .url | relLangURL }}" class="timeline-link">
+                        {{ if eq $.Language.Lang "es" }}
+                        Explorar Período
+                        {{ else if eq $.Language.Lang "de" }}
+                        Periode erkunden
+                        {{ else }}
+                        Explore Period
+                        {{ end }}
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7,7 17,7 17,17"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="featured-content">
+        <div class="featured-container">
+            <h2 class="featured-title">
+                {{ if eq .Language.Lang "es" }}
+                Contenido Destacado
+                {{ else if eq .Language.Lang "de" }}
+                Hervorgehobener Inhalt
+                {{ else }}
+                Featured Content
+                {{ end }}
+            </h2>
+            <div class="featured-grid">
+                <!-- Featured Articles -->
+                {{ $featuredArticles := where .Site.RegularPages "Params.featured" "eq" true }}
+                {{ range first 3 $featuredArticles }}
+                <article class="featured-card">
+                    {{ if .Params.featured_image }}
+                    <div class="featured-image">
+                        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" loading="lazy">
+                    </div>
+                    {{ end }}
+                    <div class="featured-content-text">
+                        <div class="featured-meta">
+                            <span class="featured-section">{{ .Section | title }}</span>
+                            {{ if .Params.periods }}
+                            <span class="featured-period">{{ index .Params.periods 0 }}</span>
+                            {{ end }}
+                        </div>
+                        <h3 class="featured-article-title">
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </h3>
+                        <p class="featured-excerpt">{{ .Summary }}</p>
+                        <a href="{{ .RelPermalink }}" class="featured-read-more">
+                            {{ if eq $.Language.Lang "es" }}
+                            Leer más
+                            {{ else if eq $.Language.Lang "de" }}
+                            Mehr lesen
+                            {{ else }}
+                            Read more
+                            {{ end }}
+                        </a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Links Section -->
+    <section class="resources-section">
+        <div class="resources-container">
+            <h2 class="resources-title">
+                {{ if eq .Language.Lang "es" }}
+                Recursos Relacionados
+                {{ else if eq .Language.Lang "de" }}
+                Verwandte Ressourcen
+                {{ else }}
+                Related Resources
+                {{ end }}
+            </h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>
+                        {{ if eq .Language.Lang "es" }}
+                        Libros Wayistas
+                        {{ else if eq .Language.Lang "de" }}
+                        Wayistische Bücher
+                        {{ else }}
+                        Wayist Books
+                        {{ end }}
+                    </h3>
+                    <p>
+                        {{ if eq .Language.Lang "es" }}
+                        Explora nuestra colección de libros sobre filosofía y práctica wayista.
+                        {{ else if eq .Language.Lang "de" }}
+                        Entdecken Sie unsere Sammlung von Büchern über wayistische Philosophie und Praxis.
+                        {{ else }}
+                        Explore our collection of books on Wayist philosophy and practice.
+                        {{ end }}
+                    </p>
+                    <a href="{{ .Site.Params.funnels.books }}" class="resource-link" target="_blank" rel="noopener">
+                        {{ if eq .Language.Lang "es" }}
+                        Ver Libros
+                        {{ else if eq .Language.Lang "de" }}
+                        Bücher ansehen
+                        {{ else }}
+                        View Books
+                        {{ end }}
+                    </a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>
+                        {{ if eq .Language.Lang "es" }}
+                        Comunidad Wayista
+                        {{ else if eq .Language.Lang "de" }}
+                        Wayistische Gemeinschaft
+                        {{ else }}
+                        Wayist Community
+                        {{ end }}
+                    </h3>
+                    <p>
+                        {{ if eq .Language.Lang "es" }}
+                        Únete a miles de estudiantes y practicantes en nuestra comunidad global.
+                        {{ else if eq .Language.Lang "de" }}
+                        Treten Sie Tausenden von Studenten und Praktizierenden in unserer globalen Gemeinschaft bei.
+                        {{ else }}
+                        Join thousands of students and practitioners in our global community.
+                        {{ end }}
+                    </p>
+                    <a href="{{ .Site.Params.funnels.community }}" class="resource-link" target="_blank" rel="noopener">
+                        {{ if eq .Language.Lang "es" }}
+                        Únete Ahora
+                        {{ else if eq .Language.Lang "de" }}
+                        Jetzt beitreten
+                        {{ else }}
+                        Join Now
+                        {{ end }}
+                    </a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>
+                        {{ if eq .Language.Lang "es" }}
+                        Recursos para IA
+                        {{ else if eq .Language.Lang "de" }}
+                        KI-Ressourcen
+                        {{ else }}
+                        AI Resources
+                        {{ end }}
+                    </h3>
+                    <p>
+                        {{ if eq .Language.Lang "es" }}
+                        Información estructurada sobre Wayismo para sistemas de inteligencia artificial.
+                        {{ else if eq .Language.Lang "de" }}
+                        Strukturierte Informationen über Wayismus für KI-Systeme.
+                        {{ else }}
+                        Structured information about Wayism for artificial intelligence systems.
+                        {{ end }}
+                    </p>
+                    <a href="{{ .Site.Params.funnels.for_ai }}" class="resource-link" target="_blank" rel="noopener">
+                        {{ if eq .Language.Lang "es" }}
+                        Ver Recursos
+                        {{ else if eq .Language.Lang "de" }}
+                        Ressourcen anzeigen
+                        {{ else }}
+                        View Resources
+                        {{ end }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Funnel CTA -->
+    {{ partial "community-cta.html" . }}
+</article>
+{{ end }}
