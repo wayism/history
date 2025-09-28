@@ -66,15 +66,15 @@ taxonomies:
 # Site parameters
 params:
   version: '1.0'
-  author: 'Wayist Historical Society'
-  email: 'contact@wayism.org'
+  author: 'Sociedad Histórica del Caminismo'
+  email: 'contact@caminismo.org'
   
   # SEO and Meta
   description: 'The definitive historical archive of Wayism across 5,000+ years of human civilization, from ancient Mesopotamia to modern times'
-  keywords: ['Wayism', 'DaoFa', 'Mahamarga', 'Caminismo', 'Wegismus', 'ancient philosophy', 'spirituality', 'history', 'The Way', 'historical archive']
+  keywords: ['Wayism', 'wayist', 'caminista', 'historia', 'DaoFa', 'Mahamarga', 'Caminismo', 'Wegismus', 'ancient philosophy', 'spirituality', 'history', 'theWAY', 'elCAMINO', 'historical archive']
   og_image: '/images/wayism-history-social.jpg'
   twitter_card: 'summary_large_image'
-  twitter_site: '@wayism'
+  twitter_site: '@wayistcoach'
   
   # Funnel links to community and resources
   funnels:
@@ -131,7 +131,7 @@ params:
   # Footer content
   footer:
     copyright: '© 2025 Wayist Historical Society, Caminismo A.C. Ancient wisdom for modern seekers.'
-    tagline: 'Documenting The Way across 5,000 years of human civilization'
+    tagline: 'Documenting theWAY across 5,000 years of human civilization'
     
   # Analytics (to be configured later)
   analytics:
@@ -155,20 +155,10 @@ menus:
       url: '/figures/'
       weight: 30
       identifier: 'figures'
-    
-    - name: 'Sources'
-      url: '/sources/'
-      weight: 40
-      identifier: 'sources'
-    
-    - name: 'Teachers'
-      url: '/teachers/'
-      weight: 50
-      identifier: 'teachers'
-    
+     
     - name: 'About'
       url: '/about/'
-      weight: 60
+      weight: 40
       identifier: 'about'
 
 # Markup configuration for better content rendering

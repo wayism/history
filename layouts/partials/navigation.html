@@ -49,21 +49,7 @@
                     {{ if eq .Language.Lang "es" }}Figuras{{ else if eq .Language.Lang "de" }}Figuren{{ else }}Figures{{ end }}
                 </a>
             </li>
-            
-            <!-- Sources Menu Item -->
-            <li class="nav-item" role="none">
-                <a href="{{ "/history/sources/" | relURL }}" class="nav-link" role="menuitem">
-                    {{ if eq .Language.Lang "es" }}Fuentes{{ else if eq .Language.Lang "de" }}Quellen{{ else }}Sources{{ end }}
-                </a>
-            </li>
-            
-            <!-- Teachers Menu Item -->
-            <li class="nav-item" role="none">
-                <a href="{{ "/history/teachers/" | relURL }}" class="nav-link" role="menuitem">
-                    {{ if eq .Language.Lang "es" }}Maestros{{ else if eq .Language.Lang "de" }}Lehrer{{ else }}Teachers{{ end }}
-                </a>
-            </li>
-            
+                      
             <!-- About Menu Item -->
             <li class="nav-item" role="none">
                 <a href="{{ "/history/about/" | relURL }}" class="nav-link" role="menuitem">
