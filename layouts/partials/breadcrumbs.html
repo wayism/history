@@ -1,0 +1,22 @@
+{{/* Simple breadcrumbs navigation */}}
+{{ if not .IsHome }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+        <li class="breadcrumb-item">
+            <a href="{{ "/history/" | relURL }}">Home</a>
+        </li>
+        
+        {{ if .Parent }}
+            {{ if not .Parent.IsHome }}
+                <li class="breadcrumb-item">
+                    <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+                </li>
+            {{ end }}
+        {{ end }}
+        
+        <li class="breadcrumb-item active" aria-current="page">
+            {{ .Title }}
+        </li>
+    </ol>
+</nav>
+{{ end }}
