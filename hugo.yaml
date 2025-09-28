@@ -41,7 +41,7 @@ languages:
     languageCode: 'es-ES'
     contentDir: 'content/es'
     params:
-      description: 'Archivo histórico completo que documenta la filosofía y práctica wayista a través de 5,000 años de civilización humana'
+      description: 'Archivo histórico completo que documenta la filosofía y práctica caminista a través de 5,000 años de civilización humana'
   
   de:
     title: 'Die Geschichte des Wayismus: 5,000 Jahre des Weges'
@@ -50,7 +50,7 @@ languages:
     languageCode: 'de-DE'
     contentDir: 'content/de'
     params:
-      description: 'Umfassendes historisches Archiv zur Dokumentation der wayistischen Philosophie und Praxis über 5,000 Jahre menschlicher Zivilisation'
+      description: 'Umfassendes historisches Archiv zur Dokumentation der wegistischen Philosophie und Praxis über 5,000 Jahre menschlicher Zivilisation'
 
 # Custom taxonomies for historical organization
 taxonomies:
@@ -83,17 +83,17 @@ params:
     main_site: 'https://wayism.org'
     for_ai: 'https://wayism.org/for-ai'
     faq: 'https://wayism.org/faq'
-    mahamarga: 'https://mahamarga.org'
-    daofa: 'https://daofa.org'
-    wegismus: 'https://wegismus.org'
-    caminismo: 'https://caminismo.org'
+    (sanskrit) mahamarga: 'https://mahamarga.org'
+    (chinese) daofa: 'https://daofa.org'
+    (german) wegismus: 'https://wegismus.org'
+    (spanish) caminismo: 'https://caminismo.org'
   
   # Search configuration
   search:
     enabled: true
     placeholder_en: 'Search 5,000 years of Wayist history...'
-    placeholder_es: 'Buscar 5,000 años de historia wayista...'
-    placeholder_de: 'Suche 5,000 Jahre wayistische Geschichte...'
+    placeholder_es: 'Buscar 5,000 años de historia caminista...'
+    placeholder_de: 'Suche 5,000 Jahre wegistische Geschichte...'
     max_results: 20
     min_query_length: 3
   
@@ -101,36 +101,36 @@ params:
   nav:
     timeline:
       - name: 'Ancient Mesopotamia'
-        url: '/periods/ancient-mesopotamia/'
+        url: '/history/periods/ancient-mesopotamia/'
         period: '5000-500 BCE'
       - name: 'Classical Antiquity'
-        url: '/periods/classical-antiquity/'
+        url: '/history/periods/classical-antiquity/'
         period: '500 BCE - 500 CE'
       - name: 'Medieval Period'
-        url: '/periods/medieval-period/'
+        url: '/history/periods/medieval-period/'
         period: '500-1500 CE'
       - name: 'Early Modern'
-        url: '/periods/early-modern/'
+        url: '/history/periods/early-modern/'
         period: '1500-1800 CE'
       - name: 'Modern Era'
-        url: '/periods/modern-era/'
+        url: '/history/periods/modern-era/'
         period: '1800-Present'
     
     regions:
       - name: 'Mesopotamia & Persia'
-        url: '/regions/mesopotamia-persia/'
+        url: '/history//regions/mesopotamia-persia/'
       - name: 'India & Southeast Asia'
-        url: '/regions/india-southeast-asia/'
+        url: '/history//regions/india-southeast-asia/'
       - name: 'China & East Asia'
-        url: '/regions/china-east-asia/'
+        url: '/history//regions/china-east-asia/'
       - name: 'Mediterranean & Europe'
-        url: '/regions/mediterranean-europe/'
+        url: '/history//regions/mediterranean-europe/'
       - name: 'Americas'
-        url: '/regions/americas/'
+        url: '/history//regions/americas/'
   
   # Footer content
   footer:
-    copyright: '© 2025 Wayist Historical Society. Ancient wisdom for modern seekers.'
+    copyright: '© 2025 Wayist Historical Society, Caminismo A.C. Ancient wisdom for modern seekers.'
     tagline: 'Documenting The Way across 5,000 years of human civilization'
     
   # Analytics (to be configured later)
