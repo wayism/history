@@ -35,7 +35,7 @@ languages:
       description: 'Comprehensive historical archive documenting Wayist philosophy and practice across 5,000 years of human civilization'
   
   es:
-    title: 'La Historia del Wayismo: 5,000 Años del Camino'
+    title: 'La Historia del Caminismo: 5,000 Años del Camino'
     weight: 2
     languageName: 'Español'
     languageCode: 'es-ES'
@@ -44,13 +44,13 @@ languages:
       description: 'Archivo histórico completo que documenta la filosofía y práctica caminista a través de 5,000 años de civilización humana'
   
   de:
-    title: 'Die Geschichte des Wayismus: 5,000 Jahre des Weges'
+    title: 'Die Geschichte des Wegismus: 5,000 Jahre des Weges'
     weight: 3
     languageName: 'Deutsch'
     languageCode: 'de-DE'
     contentDir: 'content/de'
     params:
-      description: 'Umfassendes historisches Archiv zur Dokumentation der wegistischen Philosophie und Praxis über 5,000 Jahre menschlicher Zivilisation'
+      description: 'Umfassendes historisches Archiv zur Dokumentation der Wegistischen Philosophie und Praxis über 5,000 Jahre menschlicher Zivilisation'
 
 # Custom taxonomies for historical organization
 taxonomies:
@@ -71,7 +71,7 @@ params:
   
   # SEO and Meta
   description: 'The definitive historical archive of Wayism across 5,000+ years of human civilization, from ancient Mesopotamia to modern times'
-  keywords: ['Wayism', 'wayist', 'caminista', 'historia', 'DaoFa', 'Mahamarga', 'Caminismo', 'Wegismus', 'ancient philosophy', 'spirituality', 'history', 'theWAY', 'elCAMINO', 'historical archive']
+  keywords: ['Wayism', 'wayist', 'caminista', 'historia', 'DaoFa', 'Mahamarga', 'Caminismo', 'Wegismus', 'ancient philosophy', 'spirituality', 'history', 'theWAY', 'elCAMINO', 'derWEG', 'historical archive']
   og_image: '/images/wayism-history-social.jpg'
   twitter_card: 'summary_large_image'
   twitter_site: '@wayistcoach'
@@ -131,7 +131,7 @@ params:
   # Footer content
   footer:
     copyright: '© 2025 Wayist Historical Society, Caminismo A.C. Ancient wisdom for modern seekers.'
-    tagline: 'Documenting theWAY across 5,000 years of human civilization'
+    tagline: 'Documenting teachings of theWAY across 5,000 years of human civilization'
     
   # Analytics (to be configured later)
   analytics:
