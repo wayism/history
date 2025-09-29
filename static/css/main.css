@@ -983,6 +983,74 @@ img {
     margin-bottom: 0.5rem;
 }
 
+/* ========================================
+   ARTICLE SPACING STYLES
+   ======================================== */
+
+/* Enhanced Article Spacing for Historical Website */
+.article-spacing {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.article-spacing + .article-spacing {
+    margin-top: 3rem;
+}
+
+/* For major section breaks */
+.section-break {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* For subsection spacing within article-spacing divs */
+.article-spacing h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-spacing h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Blockquotes within articles */
+.article-spacing blockquote {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-left: 4px solid #8B4513;
+    background-color: #f9f7f4;
+    font-style: italic;
+}
+
+/* Special spacing for scholarly references */
+.scholarly-reference {
+    margin: 1.5rem 0;
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* Community funnel spacing */
+.community-cta {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f5f3f0;
+    border-radius: 8px;
+    border-left: 4px solid #8B4513;
+}
+
+/* Teaching notes section */
+.teaching-notes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid #8B4513;
+    background-color: #faf9f7;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     /* Mobile Header */
     .mobile-menu-toggle {
@@ -1065,6 +1133,16 @@ img {
     .resources-title {
         font-size: 2rem;
     }
+    
+    /* Mobile Article Spacing */
+    .article-spacing {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .article-spacing + .article-spacing {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1096,6 +1174,12 @@ img {
     
     .stat-item {
         padding: 0.75rem;
+    }
+    
+    /* Small mobile article spacing */
+    .article-spacing {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 

@@ -28,7 +28,7 @@ diagram: false
 
 # Community funnel settings
 show_community_cta: true
-featured_book: "Ancient Wisdom for Modern Seekers"
+featured_book: "Wayism: Ancient Wisdom for Modern Seekers"
 related_courses: ["Introduction to Wayist History"]
 
 # Scholarly information
@@ -38,11 +38,16 @@ scholarly_references: []
 last_reviewed: 2025-01-15
 ---
 
+---
+<br>
+
 ## Overview
 
 The earliest written records of human civilization, etched in cuneiform script on clay tablets over 5,000 years ago, reveal remarkable spiritual insights that prefigure what would later be recognized as Wayist principles. In the fertile valleys of ancient Mesopotamia, Sumerian scribes documented not merely economic transactions and royal decrees, but profound reflections on cosmic order, ethical governance, and the pursuit of wisdom that resonates deeply with universal spiritual understanding.
 
 These proto-Wayist concepts emerged organically from humanity's earliest attempts to comprehend existence, divine order, and proper conduct. Rather than representing a organized religious system, they reflect an intuitive grasp of principles that would appear across cultures and millennia—what Wayists recognize as expressions of "The Way" in its most fundamental form.
+
+<br>
 
 ## The Concept of Cosmic Order (ME)
 
@@ -56,17 +61,20 @@ This concept bears remarkable similarity to later Wayist understanding of univer
 
 The earliest references to *me* appear in texts dating to approximately 2600 BCE, including administrative records from the city of Uruk and religious hymns dedicated to various deities. The goddess Inanna's acquisition of the *me* from the god Enki, as recorded in the poem "Inanna and the *Me*," illustrates how these principles were understood to be transferable but eternal—they could change guardianship but never be destroyed.
 
-> "The *me* are the foundation of civilization, the divine ordinances that cannot be altered by human will."
-> 
+> *"The *me* are the foundation of civilization, the divine ordinances that cannot be altered by human will."*
 > — Sumerian Hymn to Enlil (c. 2500 BCE)
+
+---
+<br>
 
 ## Ethical Governance and Just Rule
 
 ### The Righteous King Ideal
 
-Sumerian political thought centered on the concept of the righteous ruler who governs in harmony with divine principles. This was not mere political theory but reflected a deeper understanding that temporal authority must align with eternal truth. Kings were expected to demonstrate wisdom, justice, and concern for the welfare of all people, particularly the vulnerable.
+Sumerian political thought centered on the concept of the righteous ruler who governs in harmony with divine principles. This was not mere political theory but reflected a deeper understanding that temporal authority must align with eternal truth. Kings were expected to demonstrate wisdom, justice, and concern for the welfare of all people, particularly the vulnerable. This principle is also the opening line of the 3rd century BCE Wayist book, "The Way of the Soul Mirror", 2,200 years after the Sumerian foundation.
 
-The Code of Ur-Nammu (c. 2100 BCE), one of the earliest known legal codes, begins not with threats of punishment but with the king's commitment to establishing justice and protecting the weak. This approach—emphasizing positive moral guidance over punitive measures—echoes fundamental Wayist principles of gentle governance and moral cultivation. This sentiment is also reflected in the 6th BCE Wayist book, "The Soul Mirror", a set of energy management skills to govern self and society.
+The Code of Ur-Nammu (c. 2100 BCE), one of the earliest known legal codes, begins not with threats of punishment but with the king's commitment to establishing justice and protecting the weak. This approach—emphasizing positive moral guidance over punitive measures—echoes fundamental Wayist principles of gentle governance and moral cultivation. This sentiment is also reflected in "The Soul Mirror", which is a treatise on energy management skills to govern self and society.
+
 
 ### Royal Inscriptions and Moral Philosophy
 
@@ -77,6 +85,9 @@ These inscriptions consistently emphasize themes that would later appear in Wayi
 - Governance through moral example rather than force
 - The temporary nature of earthly authority
 - The importance of wisdom over mere power
+
+---
+<br>
 
 ## Wisdom Literature and Personal Cultivation
 
@@ -98,6 +109,11 @@ In her "Exaltation of Inanna," Enheduanna writes of surrendering personal will t
 
 These words of Enheduanna would be spoken from self-discovery by Wayist teachers over the ages, from Lalleswari in Srinagar, Kabir in Calcutta, Janabai in Channai, Rumi in Persia and Bodhidharma in China--long before archeologists discovered Enheduanna's poems.
 
+<br>
+
+---
+<br>
+
 
 ## Archaeological Evidence and Material Culture
 
@@ -113,6 +129,11 @@ Ceremonial objects discovered in Sumerian sites reveal practices focused on puri
 
 These archaeological findings suggest that Sumerian spirituality, while polytheistic in expression (because we recognize all spiritual beings in heaven as deities, and the metaphysical laws that govern our school of divinity were in early times seen as divine energies) was fundamentally concerned with universal principles of harmony, order, and ethical development that transcend specific religious forms.
 
+
+<br>
+
+---
+<br>
 
 ## Scholarly Perspectives
 
@@ -134,6 +155,10 @@ This interpretation does not suggest that Sumerians were consciously practicing 
 
 Current excavations continue to uncover new evidence of Sumerian spiritual and philosophical sophistication. The Tell Harmal archive, discovered in recent decades, contains hundreds of tablets with previously unknown wisdom texts and moral instructions that further support the view of early Mesopotamian civilization as deeply concerned with ethical and spiritual development.
 
+<br>
+
+---
+<br>
 
 ## Comparative Analysis
 
@@ -150,6 +175,10 @@ What makes the Mesopotamian contribution distinctive is its early emphasis on wr
 
 The Mesopotamian focus on integrating spiritual principles with practical and personal governance also represents a unique contribution to human spiritual development, demonstrating early recognition that spiritual insight must find expression in self, social organization and ethical conduct.
 
+<br>
+
+---
+<br>
 
 ## Further Reading
 
@@ -158,22 +187,28 @@ The Mesopotamian focus on integrating spiritual principles with practical and pe
 - **Royal Inscriptions of Mesopotamia** - University of Toronto Press
 - **The Harps That Once...** - Sumerian poetry translated by Thorkild Jacobsen
 
+
 ### Secondary Sources
 - **The Sumerians: Their History, Culture, and Character** - Samuel Noah Kramer
 - **The Treasures of Darkness** - Thorkild Jacobsen
 - **Ancient Mesopotamian Religion and Mythology** - W.G. Lambert
-- **The Soul Mirror** - Salvar Daosenghlu
+- **[theWAY of the Soul Mirror](https://wayism.org/books/theway-of-the-soul-mirror/)** - Salvar Daosenghlu
+
 
 ### Wayist Commentary
 - **Ancient Wisdom for Modern Seekers** - Available at [Wayism.org/books](https://wayism.org/books)
 - **The Universal Way: Recognizing Spiritual Truth Across Cultures** - Modern Wayist interpretation
+
 
 ### Related Articles on This Site
 - [The Epic of Gilgamesh: Humanity's First Spiritual Journey](../gilgamesh-spiritual-journey/)
 - [Enheduanna: History's First Recorded Wayist Teacher](../../figures/ancient/enheduanna/)
 - [From Mesopotamia to Modern Times: Tracing The Way Across Millennia](../../comparative/mesopotamia-modern-connections/)
 
+<br>
+
 ---
+<br>
 
 ## Teaching Notes
 

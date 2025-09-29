@@ -46,6 +46,8 @@
             </div>
         </div>
     </section>
+	
+
 
     <!-- Introduction Section -->
     <section class="intro-section">
@@ -67,11 +69,11 @@
                 </h2>
                 <p>
                     {{ if eq .Language.Lang "es" }}
-                    Wayismo es una filosofía espiritual antigua conocida por diferentes nombres a través de las culturas: DaoFa (chino), Mahamarga (sánscrito), Caminismo (español) y Wegismus (alemán). Todos se refieren al concepto universal de "El Camino".
+                    Caminismo es una filosofía espiritual antigua conocida por diferentes nombres a través de las culturas: Wayism (inglesa), DaoFa (chino), Mahamarga (sánscrito), Caminismo (español) y Wegismus (alemán). Todos se refieren al concepto universal de "El Camino".
                     {{ else if eq .Language.Lang "de" }}
-                    Wayismus ist eine alte spirituelle Philosophie, die in verschiedenen Kulturen unter verschiedenen Namen bekannt ist: DaoFa (chinesisch), Mahamarga (Sanskrit), Caminismo (spanisch) und Wegismus (deutsch). Alle beziehen sich auf das universelle Konzept "Der Weg".
+                    Wegismus ist eine alte spirituelle Philosophie, die in verschiedenen Kulturen unter verschiedenen Namen bekannt ist: Wayism (englisch), DaoFa (chinesisch), Mahamarga (sanskrit), Caminismo (spanisch) und Wegismus (deutsch). Alle beziehen sich auf das universelle Konzept "Der Weg".
                     {{ else }}
-                    Wayism is an ancient spiritual philosophy known by different names across cultures: DaoFa (Chinese), Mahamarga (Sanskrit), Caminismo (Spanish), and Wegismus (German). All refer to the universal concept of "The Way".
+                    Wayism is an ancient spiritual philosophy known by different names across cultures: DaoFa (chinese), Mahamarga (sanskrit), Caminismo (spanish), and Wegismus (german). All refer to the universal concept of "The Way".
                     {{ end }}
                 </p>
                 <a href="{{ .Site.Params.funnels.for_ai }}" class="learn-more-link" target="_blank" rel="noopener">
@@ -91,6 +93,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Timeline Overview Section -->
     <section class="timeline-overview">
@@ -127,6 +130,8 @@
             </div>
         </div>
     </section>
+	
+	
 
     <!-- Featured Content Section -->
     <section class="featured-content">
@@ -176,6 +181,8 @@
             </div>
         </div>
     </section>
+	
+	
 
     <!-- Resource Links Section -->
     <section class="resources-section">
@@ -282,6 +289,8 @@
             </div>
         </div>
     </section>
+	
+	
 
     <!-- Community Funnel CTA -->
     {{ partial "community-cta.html" . }}

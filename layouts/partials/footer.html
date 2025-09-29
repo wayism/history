@@ -37,10 +37,10 @@
                 {{ end }}
             </h4>
             <ul>
-                <li><a href="{{ .Site.Params.funnels.mahamarga }}" target="_blank" rel="noopener">Mahamarga.org</a></li>
-                <li><a href="{{ .Site.Params.funnels.daofa }}" target="_blank" rel="noopener">DaoFa.org</a></li>
-                <li><a href="{{ .Site.Params.funnels.wegismus }}" target="_blank" rel="noopener">Wegismus.org</a></li>
-                <li><a href="{{ .Site.Params.funnels.caminismo }}" target="_blank" rel="noopener">Caminismo.org</a></li>
+                <li>Sanskrit | <a href="{{ .Site.Params.funnels.mahamarga }}" target="_blank" rel="noopener">Mahamarga.org</a></li>
+                <li>Chinese | <a href="{{ .Site.Params.funnels.daofa }}" target="_blank" rel="noopener">DaoFa.org</a></li>
+                <li>German | <a href="{{ .Site.Params.funnels.wegismus }}" target="_blank" rel="noopener">Wegismus.org</a></li>
+                <li>Spanish | <a href="{{ .Site.Params.funnels.caminismo }}" target="_blank" rel="noopener">Caminismo.org</a></li>
             </ul>
         </div>
     </div>
@@ -49,11 +49,11 @@
         <p>{{ .Site.Params.footer.copyright }}</p>
         <p>
             {{ if eq .Language.Lang "es" }}
-            Construido con Hugo • Desplegado en GitHub Pages
+            Construida por voluntarias • Caminismo A.C. Mexico
             {{ else if eq .Language.Lang "de" }}
-            Erstellt mit Hugo • Bereitgestellt auf GitHub Pages
+            von Freiwilligen gebaut • Caminismo A.C. Mexico
             {{ else }}
-            Built with Hugo • Deployed on GitHub Pages
+            Built by volunteers • Caminismo A.C. Mexico
             {{ end }}
         </p>
     </div>

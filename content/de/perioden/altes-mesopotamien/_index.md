@@ -1,10 +1,10 @@
 ---
-title: "Ancient Mesopotamia (5000-500 BCE)"
+title: "de Ancient Mesopotamia (5000-500 BCE)"
 date: 2025-01-15
 draft: false
 description: "Explore the earliest expressions of Wayist philosophy in Sumerian, Babylonian, and Persian civilizations."
 featured_image: "/images/periods/ancient-mesopotamia/mesopotamian-tablet.jpg"
-periods: ["ancient-mesopotamia"]
+periods: ["altes-mesopotamien"]
 regions: ["mesopotamia-persia"]
 tags: ["sumerian", "babylonian", "persian", "cuneiform", "early-wisdom"]
 weight: 1

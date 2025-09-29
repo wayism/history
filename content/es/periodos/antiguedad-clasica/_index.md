@@ -1,5 +1,5 @@
 ---
-title: "Ancient Mesopotamia (5000-500 BCE)"
+title: "es Ancient Mesopotamia (5000-500 BCE)"
 date: 2025-01-15
 draft: false
 description: "Explore the earliest expressions of Wayist philosophy in Sumerian, Babylonian, and Persian civilizations."
@@ -11,7 +11,7 @@ weight: 1
 layout: "period"
 ---
 
-## The Dawn of Recorded Wayist Thought
+## TRANSLATE The Dawn of Recorded Wayist Thought
 
 *5000-500 BCE*
 

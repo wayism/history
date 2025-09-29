@@ -1,5 +1,5 @@
 ---
-title: "Ancient Mesopotamia (5000-500 BCE)"
+title: "espanol Ancient Mesopotamia (5000-500 BCE)"
 date: 2025-01-15
 draft: false
 description: "Explore the earliest expressions of Wayist philosophy in Sumerian, Babylonian, and Persian civilizations."
