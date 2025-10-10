@@ -1,4 +1,4 @@
-baseURL: 'https://wayism.github.io/history/' # future to be wayist.org
+baseURL: 'https://wayism.com' # future to be ://wayism.github.io/history/
 languageCode: 'en-us'
 title: 'The History of Wayism: 5,000 Years of The Way'
 # theme: 'wayism-historical'  # Using custom layouts instead of theme
