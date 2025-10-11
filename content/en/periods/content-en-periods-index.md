@@ -6,8 +6,6 @@ description: "Explore Wayist elements across 5,000 years of human history, organ
 layout: "section"
 ---
 
-# Historical Periods
-
 Journey through 5,000 years of human civilization and discover how Wayist philosophy and spirituality has appeared throughout history under different names and in various forms.
 
 ## Timeline Overview

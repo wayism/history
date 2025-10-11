@@ -4,7 +4,7 @@ description: "Explore 5,000 years of Wayist history organized by major historica
 weight: 10
 ---
 
-# Historical Timeline: 5,000 Years of The Way
+# 5,000 Years of The Way
 
 Journey through the major periods of human civilization to discover how Wayist principles have manifested across cultures and millennia.
 

@@ -4,7 +4,7 @@
         <ul class="nav-menu" role="menubar">
             <!-- Timeline Menu Item -->
             <li class="nav-item has-dropdown" role="none">
-                <a href="{{ "/history/periods/" | relURL }}" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                <a href="{{ "/periods/" | relURL }}" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
                     <span class="nav-text">
                         {{ if eq .Language.Lang "es" }}Cronología{{ else if eq .Language.Lang "de" }}Zeitleiste{{ else }}Timeline{{ end }}
                     </span>
@@ -26,7 +26,7 @@
             
             <!-- Regions Menu Item -->
             <li class="nav-item has-dropdown" role="none">
-                <a href="{{ "/history/regions/" | relURL }}" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                <a href="{{ "/regions/" | relURL }}" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
                     <span class="nav-text">
                         {{ if eq .Language.Lang "es" }}Regiones{{ else if eq .Language.Lang "de" }}Regionen{{ else }}Regions{{ end }}
                     </span>
@@ -45,14 +45,14 @@
             
             <!-- Figures Menu Item -->
             <li class="nav-item" role="none">
-                <a href="{{ "/history/figures/" | relURL }}" class="nav-link" role="menuitem">
+                <a href="{{ "/figures/" | relURL }}" class="nav-link" role="menuitem">
                     {{ if eq .Language.Lang "es" }}Figuras{{ else if eq .Language.Lang "de" }}Figuren{{ else }}Figures{{ end }}
                 </a>
             </li>
                       
             <!-- About Menu Item -->
             <li class="nav-item" role="none">
-                <a href="{{ "/history/about/" | relURL }}" class="nav-link" role="menuitem">
+                <a href="{{ "/about/" | relURL }}" class="nav-link" role="menuitem">
                     {{ if eq .Language.Lang "es" }}Acerca{{ else if eq .Language.Lang "de" }}Über{{ else }}About{{ end }}
                 </a>
             </li>

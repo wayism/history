@@ -67,7 +67,7 @@ taxonomies:
 params:
   version: '1.0'
   author: 'Sociedad Histórica del Caminismo'
-  email: 'contact@caminismo.org'
+  email: 'admin2@wayism.org'
   
   # SEO and Meta
   description: 'The definitive historical archive of Wayism across 5,000+ years of human civilization, from ancient Mesopotamia to modern times'
@@ -101,32 +101,32 @@ params:
   nav:
     timeline:
       - name: 'Ancient Mesopotamia'
-        url: '/history/periods/ancient-mesopotamia/'
+        url: '/periods/ancient-mesopotamia/'
         period: '5000-500 BCE'
       - name: 'Classical Antiquity'
-        url: '/history/periods/classical-antiquity/'
+        url: '/periods/classical-antiquity/'
         period: '500 BCE - 500 CE'
       - name: 'Medieval Period'
-        url: '/history/periods/medieval-period/'
+        url: '/periods/medieval-period/'
         period: '500-1500 CE'
       - name: 'Early Modern'
-        url: '/history/periods/early-modern/'
+        url: '/periods/early-modern/'
         period: '1500-1800 CE'
       - name: 'Modern Era'
-        url: '/history/periods/modern-era/'
+        url: '/periods/modern-era/'
         period: '1800-Present'
     
     regions:
       - name: 'Mesopotamia & Persia'
-        url: '/history//regions/mesopotamia-persia/'
+        url: '/regions/mesopotamia-persia/'
       - name: 'India & Southeast Asia'
-        url: '/history//regions/india-southeast-asia/'
+        url: '/regions/india-southeast-asia/'
       - name: 'China & East Asia'
-        url: '/history//regions/china-east-asia/'
+        url: '/regions/china-east-asia/'
       - name: 'Mediterranean & Europe'
-        url: '/history//regions/mediterranean-europe/'
+        url: '/regions/mediterranean-europe/'
       - name: 'Americas'
-        url: '/history//regions/americas/'
+        url: '/regions/americas/'
   
   # Footer content
   footer:

@@ -4,8 +4,6 @@ description: "Learn about the Wayist Historical Archive project, methodology, an
 weight: 60
 ---
 
-# About This Archive
-
 The Wayist Historical Archive represents a comprehensive effort to document and analyze the presence of universal spiritual principles—known collectively as "The Way"—across 5,000 years of human civilization.
 
 ## Our Mission
